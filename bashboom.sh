@@ -2,7 +2,7 @@
 
 function menu(){
 
-  echo -e "0 - exit\n1 - chmod\n2 - user manager";
+  echo -e "0 - exit\n1 - chmod\n2 - user manager\n3 - packet manager";
   
   echo -e "Please enter action:";
 }
@@ -22,6 +22,7 @@ do
     0) start=0;;
     1) source libs/chmod.sh; ;;
     2) source libs/users.sh; ;;
+    3) source libs/packet.sh; ;;
   
   esac
 
